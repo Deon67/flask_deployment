@@ -3,7 +3,7 @@ import numpy as np
 from keras.models import load_model
 from keras.preprocessing import image
 
-class animalt:
+class animal:
     def __init__(self,filename):
         self.filename =filename
 
