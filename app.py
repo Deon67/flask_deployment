@@ -4,8 +4,8 @@ from flask_cors import CORS, cross_origin
 from function import decodeImage
 from predict import dogcat
 
-os.putenv('LANG', 'en_US.UTF-8')
-os.putenv('LC_ALL', 'en_US.UTF-8')
+#os.putenv('LANG', 'en_US.UTF-8')
+#os.putenv('LC_ALL', 'en_US.UTF-8')
 
 application = Flask(__name__)
 CORS(application)
@@ -38,4 +38,4 @@ clApp = ClientApp()
 if __name__ == "__main__":
     # clApp = ClientApp()
     # app.run(host='0.0.0.0', port=port)
-    application.run('127.0.0.2',debug=True)
+    application.run(debug=True)
