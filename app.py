@@ -15,7 +15,7 @@ CORS(app)
 class ClientApp:
     def __init__(self):
         self.filename = "inputImage.jpg"
-        self.classifier = dogcat(self.filename)
+        self.classifier = animal(self.filename)
 
 
 @app.route("/", methods=['GET'])
@@ -29,7 +29,7 @@ def home():
 def predictRoute():
     image = request.json['image']
     decodeImage(image, clApp.filename)
-    result = clApp.classifier.predictiondogcat()
+    result = clApp.classifier.predictionanimal()
     return jsonify(result)
 
 
