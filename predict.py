@@ -3,12 +3,12 @@ import numpy as np
 from keras.models import load_model
 from keras.preprocessing import image
 
-class dogcat:
+class animalt:
     def __init__(self,filename):
         self.filename =filename
 
 
-    def predictiondogcat(self):
+    def predictionanimal(self):
         # load model
         model = load_model('animal_classifier.h5')
 
