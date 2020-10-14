@@ -38,4 +38,4 @@ clApp = ClientApp()
 if __name__ == "__main__":
     # clApp = ClientApp()
     # app.run(host='0.0.0.0', port=port)
-    application.run(debug=True)
+    application.run('127.0.0.2',debug=True)
