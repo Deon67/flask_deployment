@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template
 import os
 from flask_cors import CORS, cross_origin
 from function import decodeImage
-from predict import dogcat
+from predict import animal
 
 #os.putenv('LANG', 'en_US.UTF-8')
 #os.putenv('LC_ALL', 'en_US.UTF-8')
